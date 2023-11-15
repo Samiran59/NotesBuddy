@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <a class="logo">NotesBuddy</a>
+        <div class="header-right">
+          <a href="home.html">Home</a>
+          <a class=active href="index2.html">Notes</a>
+          <a href="Feedback.html">Feedback</a>
+        </div>
+      </div>
+    <main>
+        <section id="notes">
+            <article class="note">
+                <h2>Cloud Computing</h2>
+                <p>Download the PDF file for Cloud Computing.</p>
+                <a href="math_notes.pdf" download>Download PDF</a>
+            </article>
+            <article class="note">
+                <h2>Network Security</h2>
+                <p>Download the PDF file for Network Security.</p>
+                <a href="physics_notes.pdf" download>Download PDF</a>
+            </article>
+            <article class="note">
+                <h2>Principles of Virtualization</h2>
+                <p>Download the PDF file for Principles of Virtualization.</p>
+                <a href="physics_notes.pdf" download>Download PDF</a>
+            </article>
+            <article class="note">
+                <h2>Web Technologies</h2>
+                <p>Download the PDF file for Web Technologies.</p>
+                <a href="physics_notes.pdf" download>Download PDF</a>
+            </article>
+            <article class="note">
+                <h2>Logical Reasoning & Thinking</h2>
+                <p>Download the PDF file for Logical Reasoning & Thinking.</p>
+                <a href="physics_notes.pdf" download>Download PDF</a>
+            </article>
+            <article class="note">
+                <h2>Database Security</h2>
+                <p>Download the PDF file for Database Security.</p>
+                <a href="physics_notes.pdf" download>Download PDF</a>
+            </article>
+            <!-- Add more notes as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">Samiran Malakar</a> </p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

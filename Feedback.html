@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Feedback.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <a href="" class="logo">NotesBuddy</a>
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="index2.html">Notes</a>
+            <a class= active href="Feedback.html">Feedback</a>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACT</span>
+                            <span>US</span>
+                        </div>
+                        <div class="app-contact">CONTACT INFO : +123456789</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME" value="NotesBuddy">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="CONTACT NO">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="MESSAGE">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">CANCEL</button>
+                                <button class="app-form-button">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
